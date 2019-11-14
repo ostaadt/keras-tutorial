@@ -94,7 +94,7 @@ BS = 32
 print("[INFO] training network...")
 opt = SGD(lr=INIT_LR, decay=INIT_LR / EPOCHS)
 model.compile(loss="categorical_crossentropy", optimizer=opt,
-	metrics=["accuracy"])
+	metrics=["acc"])
 
 # train the network
 H = model.fit_generator(aug.flow(trainX, trainY, batch_size=BS),

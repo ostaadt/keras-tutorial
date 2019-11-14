@@ -90,7 +90,7 @@ EPOCHS = 75
 print("[INFO] training network...")
 opt = SGD(lr=INIT_LR)
 model.compile(loss="categorical_crossentropy", optimizer=opt,
-	metrics=["accuracy"])
+	metrics=["acc"])
 
 # train the neural network
 H = model.fit(trainX, trainY, validation_data=(testX, testY),
