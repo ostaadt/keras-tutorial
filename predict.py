@@ -3,7 +3,7 @@
 # python predict.py --image images/dog.jpg --model output/smallvggnet.model --label-bin output/smallvggnet_lb.pickle --width 64 --height 64
 
 # import the necessary packages
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 import argparse
 import pickle
 import cv2
